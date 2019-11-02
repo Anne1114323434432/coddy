@@ -1,0 +1,96 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing:  border-box;
+	-moz-box-sizing: border-boxA;
+}
+
+body {
+	background-color: #eadca6
+}
+h1 {
+	text-align: center;
+	color: #000000;
+}
+p {
+	color: #f4f4f4
+	padding: 10px 20px;
+	font-weight: bold; /*текст : жирный*/
+	font-size: 28px;
+}
+a {
+	width:166px;
+	height:200px;
+	display: inline-block;
+	margin: 10px;
+	opacity: 0.5;
+	text-decoration: none;
+	color: #c36a2d;
+
+
+}
+/*hover срабатывает только при наведении мыши*/
+a:hover {
+	/*тень-блока:
+		*сдвиг по х (может быть отрицательным )
+		*сдвиг по у (может быть отрицательным)
+		*размытие по х
+		*размытие по у
+		*цвет тени */
+	box-shadow:3px 3px 3px 3px grey;
+	transition: 1s;
+	opacity: 1;
+
+
+}
+
+a:visited {
+	color: #f4f4f4;
+}
+
+img{
+	width: 90%;
+	display:auto;
+	margin: auto;
+}
+span {
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+.main {
+	max-width: 1000px;
+	margin: 22px auto;
+	border: 25px solid #c36a2d;
+	background-color: #e2c275;
+
+}
+.main2 {
+	background-color: #fff;
+	display:flex;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 10px 1px  #c36a2d;; 
+	flex-wrap: wrap;
+}
+.item {
+	max-height: 265px;
+	max-width: 490px;
+	width: calc(50% - 10px);
+	height :calc(95vw / 2 / 16 * 9 );
+	background-color: dodgerblue;
+	margin: 5px;
+	background-size: cover;
+	opacity: 0.5;
+}
+.item img {
+	width: 100%;
+	height:100%;
+	
+
+.item:hover {
+	opacity: 1;
+	transition: 1s;
+}
